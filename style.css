@@ -1,0 +1,288 @@
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #240229 !important;
+    color: white !important
+
+}
+.square{
+    position: relative;
+    width: 600px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.square span:nth-child(1){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #fff;
+    border-radius: 38% 62% 63% 37%  / 41% 44% 56% 59%;
+    transition: 0.5s;
+    animation: animate 6s linear infinite;
+
+}
+/* .square:hover span:nth-child(1){
+    color: #fff;
+    border: none;
+    background: blue;
+} */
+
+.square span:nth-child(2){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid#fff;
+    border-radius: 38% 62% 63% 37%  / 41% 44% 56% 59%;
+    transition: 0.5s;
+    animation: animate 4s linear infinite;
+
+
+}
+/* .square:hover span:nth-child(2){
+    color: #fff;
+    border: none;
+    background: blue;
+} */
+
+.square span:nth-child(3){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid#fff;
+    border-radius: 38% 62% 63% 37%  / 41% 44% 56% 59%;
+    transition: 0.5s;
+    animation: animate2 10s linear infinite;
+
+
+}
+/* .square:hover span:nth-child(3){
+    color: #fff !;
+    border: none;
+    background: blue;
+} */
+
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animate2{
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+.main{
+    position: relative;
+
+}
+
+.square1{
+    position: relative;
+    width: 600px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.square1 span:nth-child(1){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #fff;
+    border-radius: 38% 62% 63% 37%  / 41% 44% 56% 59%;
+
+
+}
+
+.square1 span:nth-child(2){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid#fff;
+    border-radius: 38% 62% 63% 37%  / 41% 44% 56% 59%;
+
+}
+
+.square1 span:nth-child(3){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid#fff;
+    border-radius: 38% 62% 63% 37%  / 41% 44% 56% 59%;
+
+
+
+}
+
+/* STOP WATCH CSS */
+p{
+    text-align: center;
+    font-family: 'Black Ops One', cursive;
+    font-size: 35px;
+    color: #5cdb95;
+    
+}
+h1{
+    margin: 16px;
+    text-align: center;
+    font-size: 90px !important;
+    display: inline-block;
+    width: 100px;
+    font-family: 'Black Ops One', cursive !important;
+}
+.count{
+    text-align: center;
+    padding-top: 20px;
+}
+.msm{
+    display: flex;
+    justify-content: center;
+    
+}
+.msm>h6{
+    text-align: center;
+    margin: 18px;
+    margin-top: -40px;
+    padding: 30px;
+    width: 100px;
+    font-family: 'MuseoModerno', cursive;
+}
+.buttons{
+    margin-top: -20px;
+    text-align: center;
+ 
+}
+
+.btn:hover{
+    background-color: #5cdb95 !important;
+    color: #fff;
+    outline: none;
+    border: none;
+
+}
+button{
+    font-size: 28px !important;
+    margin: 24px !important;
+    font-family: 'Sacramento', cursive !important;
+}
+
+.design{
+    text-align: center;
+    color: white;
+    font-family: 'Cookie', cursive;
+    font-size: 22px;
+    margin-top: 5px;
+}
+.design:hover{
+    color: #5cdb95;
+}
+/* EXTRA TITLE STYLE */
+
+/* .title{
+    text-align: center;
+    font-family: 'Black Ops One', cursive;
+    position: relative;
+    padding: 15px 15px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 25px;
+    overflow: hidden;
+    transition: 0.2s;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    border-radius: 20px;
+}
+
+.title{
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    color: #fff;
+    background: #5cdb95;
+    box-shadow: 0 0 10px #5cdb95, 0 0 40px #5cdb95, 0 0 80px #5cdb95;
+    /* transition-delay: 0.05s; */
+
+    /* EXTRA BUTTON STYLE */
+
+    /* .btn {
+        color: #fff;
+        position: relative;
+        border-radius: 0 !important;
+        border: none;
+        text-decoration: none !important;
+        text-transform: none !important;
+        transition:all 0.3s ease 0s;
+    }
+    .btn:hover,
+    .btn.active:hover{
+        color: #ffffff;
+        border: none;
+        text-decoration: none !important;
+        text-transform: none !important;
+    }
+    .btn:before{
+        content: "";
+        position: absolute;
+        top: -7px;
+        left: 0;
+        background-color:#5cdb95;
+        width: 30%;
+        height: 4px;
+        transition:all 0.3s ease 0s;
+    }
+    .btn:after{
+        content: "";
+        position: absolute;
+        bottom: -7px;
+        right: 0;
+        background-color:#5cdb95;
+        width: 30%;
+        height: 4px;
+        transition:all 0.3s ease 0s;
+    }
+    .btn:hover:before,
+    .btn:hover:after,
+    .btn.active:before,
+    .btn.active:after{
+        width: 100%;
+    }
+
+    @media screen and (max-width: 575px){
+        .btn{
+            margin-bottom: 50px !important;
+        }
+    } */
+
+
+
